@@ -1,0 +1,934 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+$bold: "bold";
+$regular: "regular";
+$semibold: "semi-bold";
+
+.On {
+    background-color: black;
+    color: #ffff;
+
+    .hamburger {
+
+        .bar1,
+        .bar2,
+        .bar3 {
+            background-color: #ffff;
+        }
+    }
+
+    header {
+        img {
+            transition: 3sec ease-in-out;
+        }
+
+        ul {
+            li a {
+                color: #ffff;
+            }
+        }
+
+        &.open {
+            background-color: black;
+            width: 100%;
+            height: 668px;
+
+            ul {
+                li a {
+                    color: #ffff;
+                }
+            }
+
+
+        }
+    }
+   .services{
+    .items{
+        .kit{
+            color: black;
+        }
+    }
+   }
+
+}
+
+.clik {
+    .services p {
+        max-height: auto;
+    }
+}
+
+header {
+    display: flex;
+
+
+    h2 {
+        font-size: 25px;
+        font-family: $semibold;
+        margin-top: 30px;
+        color: rgb(102, 216, 144);
+
+    }
+
+    ul {
+        display: none;
+    }
+
+    img {
+        width: 13%;
+        height: 7%;
+        position: absolute;
+        top: 24px;
+        right: 75px;
+    }
+
+
+
+
+    .hamburger {
+        display: inline-block;
+        cursor: pointer;
+        position: absolute;
+        top: 28px;
+        right: 19px;
+
+        .bar1,
+        .bar2,
+        .bar3 {
+            background-color: black;
+            width: 35px;
+            height: 5px;
+            margin: 6px 0px;
+
+        }
+    }
+
+    &.open {
+        background-color: #ffff;
+        width: 100%;
+        height: 668px;
+
+
+        ul {
+            display: block;
+            position: absolute;
+            top: 206px;
+            left: 95px;
+
+            li a {
+                color: black;
+                text-decoration: none;
+                font-size: 25px;
+                font-family: $regular;
+                line-height: 90px;
+            }
+
+        }
+
+        .bar1 {
+            transform: rotate(45deg) translate(6px, 7px)
+        }
+
+        .bar2 {
+            opacity: 0;
+        }
+
+        .bar3 {
+            transform: rotate(-45deg) translate(8px, -9px);
+        }
+    }
+}
+
+.banner {
+    // text-align: center;
+    margin-top: 140px;
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+
+        .cent {
+
+            text-align: left;
+        }
+
+        h3 {
+            font-size: 19px;
+            font-family: $semibold;
+            margin-top: -76px;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-family: $bold;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            font-family: $regular;
+        }
+
+        button {
+            background-color: rgb(102, 216, 144);
+            color: #ffff;
+            border: none;
+            margin: 10px 5px 20px 5px;
+            padding: 10px;
+            width: 41%;
+            border-radius: 5px;
+        }
+
+        border-radius: 5px;
+    }
+}
+
+
+
+
+
+.about {
+    text-align: center;
+    margin-top: 50px;
+
+    .text {
+       text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .top {
+            margin-top: 50px;
+            font-size: 25px;
+            font-family: $regular;
+        }
+
+        .bottom {
+            font-size: 25px;
+            font-family: $semibold;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 15px;
+            font-family: $regular;
+        }
+
+        .btn2 {
+            background-color: rgb(102, 216, 144);
+            color: #ffff;
+            border: none;
+            border-radius: 5px;
+            width: 41%;
+            padding: 10px;
+          
+
+        }
+    }
+}
+
+.projects {
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+
+    // .img1 {
+    //     display: flex;
+
+    //     .tig {
+    //         display: none;
+    //     }
+    // }
+
+    .lefta {
+        position: absolute;
+        top: 187px;
+        left: 15px;
+        width: 5%;
+    }
+
+    .righta {
+        position: absolute;
+        top: 187px;
+        right: 15px;
+        width: 5%;
+    }
+
+    .flyware {
+        width: 70%;
+        margin-top: 20px;
+    }
+
+    h2 {
+        font-size: 25px;
+        font-family: $semibold;
+    }
+
+
+}
+
+.services {
+    margin-top: 50px;
+    text-align: center;
+
+    h2 {
+        font-size: 25px;
+        font-family: $semibold;
+    }
+
+    .items {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        height: 400px;
+
+        h3 {
+            margin-top: 20px;
+        }
+
+        .kit {
+            width: 20%;
+        }
+
+        .globe {
+            width: 20%;
+        }
+
+        .press {
+            width: 20%;
+        }
+    }
+
+    p {
+        font-size: 20px;
+        font-family: $regular;
+        margin-top: 20px;
+        max-height: 90px;
+        overflow: hidden;
+
+        &.show {
+            display: none;
+            margin: 10px auto 20px;
+        }
+
+        &.show2 {
+            display: none;
+            margin: 10px auto 20px;
+        }
+
+        &.show3 {
+            display: none;
+            margin: 10px auto 20px;
+        }
+    }
+
+
+
+    button {
+        width: 41%;
+        border-radius: 8px;
+        padding: 10px;
+        border: none;
+        background-color: rgb(102, 216, 144);
+        color: #ffff;
+
+    }
+}
+
+.connect {
+    margin-top: 50px;
+    text-align: center;
+
+    h2 {
+        font-size: 25px;
+        font-family: $semibold;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        input {
+            border-bottom: 2px solid grey;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            margin: 10px;
+            padding: 10px;
+        }
+    }
+
+    button {
+        margin-top: 20px;
+        width: 25%;
+        border: none;
+        background-color: rgb(102, 216, 144);
+        color: #ffff;
+        border-radius: 8px;
+        padding: 10px;
+    }
+}
+
+footer {
+
+    background-color: rgb(102, 216, 144);
+    margin-top: 50px;
+    height: 20vh;
+    overflow: hidden;
+    position: relative;
+
+
+
+    ul {
+        display: none;
+    }
+
+    .images {
+        display: flex;
+        position: absolute;
+        top: 20px;
+        left: 100px;
+
+        img {
+            width: 30px;
+            height: 30px;
+            margin: 5px;
+        }
+    }
+
+    h3 {
+        position: absolute;
+        top: 74px;
+        left: 10%;
+        color: #ffff;
+        font-size: 20px;
+        font-family: $regular;
+    }
+}
+
+
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) {
+    header {
+        img {
+            width: 8%;
+            height: 10%;
+            position: absolute;
+            top: 28px;
+            right: 75px;
+        }
+
+        &.open ul li a {
+            margin-left: 170px;
+            color: black;
+            text-decoration: none;
+            font-size: 25px;
+            font-family: "regular";
+            line-height: 90px;
+        }
+    }
+
+    footer {
+        h3 {
+            top: 31px;
+            left: 57%;
+
+        }
+
+        .images {
+            top: 20px;
+            left: 28px;
+        }
+    }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+            font-size: 35px;
+            font-family: "semi-bold";
+            margin-top: 43px;
+        }
+
+        img {
+            width: 9%;
+            height: 6%;
+            top: 30px;
+            right: 106px;
+        }
+
+        .hamburger {
+            right: -14px;
+            width: 11%;
+            height: 7%;
+            top: 44px;
+        }
+
+        &.open ul {
+
+            left: 150px;
+        }
+    }
+
+
+    .banner {
+        margin-top: 145px;
+
+        .main {
+            margin-left: 14px;
+        }
+
+
+
+        .item {
+            .cent {
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+
+                h1 {
+                    font-size: 29px;
+                }
+
+                h3 {
+                    font-size: 18px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+
+                button {
+                    width: 41%;
+                }
+            }
+        }
+
+    }
+
+    .about {
+        img {
+            width: 100%;
+            margin-top: 60px;
+        }
+
+        .text {
+
+
+            .top {
+                font-size: 35px;
+            }
+
+            .bottom {
+                font-size: 35px;
+            }
+
+            p {
+                font-size: 22px;
+            }
+
+            .btn2 {
+
+                width: 41%;
+                padding: 10px;
+              
+            }
+        }
+
+
+
+        // .img1 {
+        //     .tig {
+        //         display: block;
+        //     }
+        // }
+    }
+
+    .connect {
+        form input {
+            width: 75%;
+            padding: 10px;
+        }
+    }
+
+    footer {
+        height: 10vh;
+
+        .images {
+            top: 38px;
+            left: 47px;
+        }
+
+        h3 {
+            top: 45px;
+            left: 378px;
+            font-size: 24px;
+            font-family: "regular";
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    header {
+        .hamburger {
+            display: none;
+        }
+
+        ul {
+            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -43px;
+            margin-left: 200px;
+
+            li a {
+                color: black;
+                padding: 20px;
+                font-family: $regular;
+                text-decoration: none;
+            }
+        }
+
+        img {
+            width: 4%;
+            height: 7%;
+            right: 75px;
+            top: 38px;
+
+
+        }
+
+        h3 {
+            margin-top: 10px;
+        }
+    }
+
+    .banner {
+        margin-top: 148px;
+
+        .main {
+            margin-left: 75px;
+        }
+
+
+        img {
+            width: 74%;
+        }
+
+        .item {
+            button {
+                padding: 10px;
+                width: 26%;
+            }
+        }
+
+        h3 {
+            margin-top: -1px;
+        }
+
+        p {
+            line-height: 1.5;
+            margin: 25px 0;
+        }
+    }
+
+    .about {
+        img {
+            width: 74%;
+            margin-right: 103px;
+
+        }
+
+        .text {
+            text-align: right;
+            .bottom {
+                font-size: 29px;
+            }
+
+            .top {
+                font-size: 29px;
+            }
+
+            .btn2 {
+                width: 26%;
+                padding: 10px;
+               
+            }
+
+            p {
+                line-height: 1.5;
+                margin: 20px 0;
+                font-size: 15px;
+            }
+        }
+
+
+
+    }
+
+    .projects {
+        h2 {
+            font-size: 29px;
+        }
+    }
+
+    .services {
+        .items {
+            margin-top: 65px;
+            height: 500px;
+        }
+
+        h2 {
+            font-size: 29px;
+        }
+    }
+
+    .connect {
+        margin-top: 100px;
+
+        h2 {
+            font-size: 29px;
+        }
+
+        button {
+            margin-top: 50px;
+            width: 10%;
+            padding: 15px;
+        }
+
+        form input {
+            width: 65%;
+            padding: 10px;
+        }
+
+    }
+
+    footer {
+        height: 11vh;
+
+        .images {
+            top: 26px;
+            left: 101px;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-family: $regular;
+            top: 38px;
+            left: 951px;
+        }
+
+        ul {
+            display: inline-block;
+            display: flex;
+            position: absolute;
+            top: 37px;
+            left: 343px;
+        }
+
+        li a {
+            color: #ffff;
+            padding: 20px;
+            font-family: $regular;
+            text-decoration: none;
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) {}
