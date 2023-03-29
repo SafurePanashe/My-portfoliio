@@ -637,6 +637,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .projects h2 {
     font-size: 29px;
   }
+  .projects .flyware {
+    margin-left: 389px;
+  }
+  .projects h3 {
+    margin: 34px;
+  }
   .services .items {
     margin-top: 65px;
     height: 500px;
