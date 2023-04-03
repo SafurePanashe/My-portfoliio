@@ -273,6 +273,9 @@ header.open .bar3 {
   flex-direction: column;
   justify-content: center;
 }
+.about .text .abt {
+  margin-left: 20px;
+}
 .about .text .top {
   margin-top: 50px;
   font-size: 25px;
@@ -297,29 +300,13 @@ header.open .bar3 {
 }
 
 .projects {
-  position: relative;
-  margin-top: 50px;
-  text-align: center;
+  margin-top: 150px;
 }
-.projects .lefta {
-  position: absolute;
-  top: 187px;
-  left: 15px;
-  width: 5%;
+.projects .projeccts {
+  display: flex;
 }
-.projects .righta {
-  position: absolute;
-  top: 187px;
-  right: 15px;
-  width: 5%;
-}
-.projects .flyware {
-  width: 70%;
-  margin-top: 20px;
-}
-.projects h2 {
-  font-size: 25px;
-  font-family: "semi-bold";
+.projects .projeccts h3 {
+  font-size: 20px;
 }
 
 .services {
@@ -349,33 +336,6 @@ header.open .bar3 {
 }
 .services .items .press {
   width: 20%;
-}
-.services p {
-  font-size: 20px;
-  font-family: "regular";
-  margin-top: 20px;
-  max-height: 90px;
-  overflow: hidden;
-}
-.services p.show {
-  display: none;
-  margin: 10px auto 20px;
-}
-.services p.show2 {
-  display: none;
-  margin: 10px auto 20px;
-}
-.services p.show3 {
-  display: none;
-  margin: 10px auto 20px;
-}
-.services button {
-  width: 41%;
-  border-radius: 8px;
-  padding: 10px;
-  border: none;
-  background-color: rgb(102, 216, 144);
-  color: white;
 }
 
 .connect {

@@ -332,7 +332,9 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: center;
-
+         .abt{
+            margin-left: 20px;
+         }
         .top {
             margin-top: 50px;
             font-size: 25px;
@@ -364,41 +366,13 @@ header {
 }
 
 .projects {
-    position: relative;
-    margin-top: 50px;
-    text-align: center;
-
-    // .img1 {
-    //     display: flex;
-
-    //     .tig {
-    //         display: none;
-    //     }
-    // }
-
-    .lefta {
-        position: absolute;
-        top: 187px;
-        left: 15px;
-        width: 5%;
-    }
-
-    .righta {
-        position: absolute;
-        top: 187px;
-        right: 15px;
-        width: 5%;
-    }
-
-    .flyware {
-        width: 70%;
-        margin-top: 20px;
-    }
-
-    h2 {
-        font-size: 25px;
-        font-family: $semibold;
-    }
+   margin-top: 150px;
+   .projeccts{
+    display: flex;
+     h3{
+        font-size: 20px;
+     }     
+   }
 
 
 }
@@ -437,41 +411,32 @@ header {
         }
     }
 
-    p {
-        font-size: 20px;
-        font-family: $regular;
-        margin-top: 20px;
-        max-height: 90px;
-        overflow: hidden;
+    // p {
+    //     font-size: 20px;
+    //     font-family: $regular;
+    //     margin-top: 20px;
+    //     max-height: 90px;
+    //     overflow: hidden;
 
-        &.show {
-            display: none;
-            margin: 10px auto 20px;
-        }
+        // &.show {
+        //     display: none;
+        //     margin: 10px auto 20px;
+        // }
 
-        &.show2 {
-            display: none;
-            margin: 10px auto 20px;
-        }
+        // &.show2 {
+        //     display: none;
+        //     margin: 10px auto 20px;
+        // }
 
-        &.show3 {
-            display: none;
-            margin: 10px auto 20px;
-        }
+        // &.show3 {
+        //     display: none;
+        //     margin: 10px auto 20px;
+        // }
     }
 
 
 
-    button {
-        width: 41%;
-        border-radius: 8px;
-        padding: 10px;
-        border: none;
-        background-color: rgb(102, 216, 144);
-        color: #ffff;
 
-    }
-}
 
 .connect {
     margin-top: 50px;
