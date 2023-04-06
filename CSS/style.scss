@@ -138,11 +138,20 @@ $bold: "bold";
 $regular: "regular";
 $semibold: "semi-bold";
 
+input:focus {
+    outline: none;
+}
+
 .On {
     background-color: black;
     color: #ffff;
 
+    body {
+        color: #ffff;
+    }
+
     .hamburger {
+
 
         .bar1,
         .bar2,
@@ -152,6 +161,8 @@ $semibold: "semi-bold";
     }
 
     header {
+        height: 12vh;
+
         img {
             transition: 3sec ease-in-out;
         }
@@ -176,13 +187,31 @@ $semibold: "semi-bold";
 
         }
     }
-   .services{
-    .items{
-        .kit{
-            color: black;
+
+    .projects {
+        .projeccts {
+            .projeccts {
+                .grup1 {
+                    a {
+                        color: #ffff;
+                        text-decoration: none;
+                    }
+                }
+            }
         }
     }
-   }
+
+    .services {
+        .card {
+            color: black;
+        }
+
+        .items {
+            .kit {
+                color: black;
+            }
+        }
+    }
 
 }
 
@@ -195,12 +224,15 @@ $semibold: "semi-bold";
 header {
     display: flex;
 
+    span {
+        color: rgb(218, 73, 70);
+    }
 
     h2 {
         font-size: 25px;
         font-family: $semibold;
         margin-top: 30px;
-        color: rgb(102, 216, 144);
+        // color: rgb(218, 73, 70);
 
     }
 
@@ -209,11 +241,12 @@ header {
     }
 
     img {
-        width: 13%;
-        height: 7%;
+        width: 11%;
+        height: 6%;
         position: absolute;
-        top: 24px;
+        top: 27px;
         right: 75px;
+        object-fit: contain;
     }
 
 
@@ -274,48 +307,66 @@ header {
 }
 
 .banner {
+    height: 88vh;
+
+    .banner-img {
+        width: 100%;
+        height: 100vh;
+
+    }
+
+    span {
+        color: rgb(218, 73, 70);
+    }
+
     // text-align: center;
     margin-top: 140px;
 
     .item {
+
         display: flex;
         flex-direction: column;
-        /* align-items: center; */
         justify-content: center;
+        margin-top: 49px;
 
         .cent {
+            // text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
-            text-align: left;
-        }
 
-        h3 {
-            font-size: 19px;
-            font-family: $semibold;
-            margin-top: -76px;
-        }
+            h3 {
+                font-size: 19px;
+                font-family: $semibold;
 
-        h1 {
-            font-size: 36px;
-            font-family: $bold;
-            margin-top: 20px;
-        }
+            }
 
-        p {
-            font-size: 20px;
-            font-family: $regular;
-        }
+            h1 {
+                font-size: 36px;
+                font-family: $bold;
+                margin-top: 5px;
 
-        button {
-            background-color: rgb(102, 216, 144);
-            color: #ffff;
-            border: none;
-            margin: 10px 5px 20px 5px;
-            padding: 10px;
-            width: 41%;
+            }
+
+            p {
+                font-size: 20px;
+                font-family: $regular;
+
+            }
+
+            button {
+                background-color: rgb(218, 73, 70);
+                color: #ffff;
+                border: none;
+                margin: 10px 5px 20px 100px;
+                padding: 10px;
+                width: 41%;
+                border-radius: 5px;
+            }
+
             border-radius: 5px;
         }
-
-        border-radius: 5px;
     }
 }
 
@@ -324,27 +375,37 @@ header {
 
 
 .about {
-    text-align: center;
+
     margin-top: 50px;
 
+    img {
+        width: 100%;
+    }
+
     .text {
-       text-align: left;
+        span {
+            color: rgb(218, 73, 70);
+
+        }
+
         display: flex;
         flex-direction: column;
         justify-content: center;
-         .abt{
+
+        .abt {
             margin-left: 20px;
-         }
+        }
+
         .top {
-            margin-top: 50px;
+            margin: 50px 0 0 116px;
             font-size: 25px;
             font-family: $regular;
         }
 
         .bottom {
-            font-size: 25px;
+            font-size: 22px;
             font-family: $semibold;
-            margin-top: 20px;
+            margin-top: 5px;
         }
 
         p {
@@ -353,27 +414,103 @@ header {
         }
 
         .btn2 {
-            background-color: rgb(102, 216, 144);
+            background-color: rgb(218, 73, 70);
             color: #ffff;
             border: none;
             border-radius: 5px;
             width: 41%;
             padding: 10px;
-          
-
+            margin-left: 113px;
         }
+
+
     }
 }
 
-.projects {
-   margin-top: 150px;
-   .projeccts{
-    display: flex;
-     h3{
-        font-size: 20px;
-     }     
-   }
 
+.projects {
+    margin-top: 150px;
+
+    img {
+        width: 100%;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .view {
+        background-color: rgb(218, 73, 70);
+
+
+
+    }
+
+    .projeccts {
+
+        position: relative;
+
+        h3 {
+            font-size: 15px;
+        }
+
+        .grup1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            img {
+                width: 16%;
+                position: absolute;
+                top: 29px;
+                left: 72px;
+
+            }
+
+            h3 {
+                margin: 10px;
+            }
+
+        }
+
+        .grup2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h3 {
+                margin: 10px;
+            }
+
+        }
+    }
+
+    h3 {
+        margin-top: 20px;
+        font-size: 25px;
+        font-family: $semibold;
+    }
+
+    h4 {
+        font-size: 20px;
+        font-family: $regular;
+    }
+
+    p {
+        font-size: 16px;
+        font-family: $regular;
+    }
+
+    button {
+        background-color: rgb(218, 73, 70);
+        width: 38%;
+        margin: 10px 0 10px 118px;
+        border: none;
+        border-radius: 8px;
+        color: #ffff;
+        padding: 8px;
+    }
 
 }
 
@@ -411,28 +548,8 @@ header {
         }
     }
 
-    // p {
-    //     font-size: 20px;
-    //     font-family: $regular;
-    //     margin-top: 20px;
-    //     max-height: 90px;
-    //     overflow: hidden;
 
-        // &.show {
-        //     display: none;
-        //     margin: 10px auto 20px;
-        // }
-
-        // &.show2 {
-        //     display: none;
-        //     margin: 10px auto 20px;
-        // }
-
-        // &.show3 {
-        //     display: none;
-        //     margin: 10px auto 20px;
-        // }
-    }
+}
 
 
 
@@ -441,6 +558,10 @@ header {
 .connect {
     margin-top: 50px;
     text-align: center;
+
+    span {
+        color: rgb(218, 73, 70);
+    }
 
     h2 {
         font-size: 25px;
@@ -458,8 +579,8 @@ header {
             border-top: none;
             border-left: none;
             border-right: none;
-            margin: 10px;
-            padding: 10px;
+
+            padding: 10px 0;
         }
     }
 
@@ -467,7 +588,7 @@ header {
         margin-top: 20px;
         width: 25%;
         border: none;
-        background-color: rgb(102, 216, 144);
+        background-color: rgb(218, 73, 70);
         color: #ffff;
         border-radius: 8px;
         padding: 10px;
@@ -476,11 +597,10 @@ header {
 
 footer {
 
-    background-color: rgb(102, 216, 144);
+    background-color: rgb(218, 73, 70);
     margin-top: 50px;
-    height: 20vh;
-    overflow: hidden;
-    position: relative;
+    height: 17vh;
+
 
 
 
@@ -490,21 +610,22 @@ footer {
 
     .images {
         display: flex;
-        position: absolute;
-        top: 20px;
-        left: 100px;
+        // position: absolute;
+        // top: 20px;
+        // left: 100px;
 
         img {
             width: 30px;
             height: 30px;
-            margin: 5px;
+            margin: 5px 10px;
+            object-fit: contain;
         }
     }
 
     h3 {
-        position: absolute;
-        top: 74px;
-        left: 10%;
+        // position: absolute;
+        // top: 74px;
+        // left: 10%;
         color: #ffff;
         font-size: 20px;
         font-family: $regular;
@@ -568,6 +689,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
     header {
+        height: 20vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -579,17 +701,16 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         }
 
         img {
-            width: 9%;
-            height: 6%;
-            top: 30px;
+            top: 6px;
             right: 106px;
+            object-fit: contain;
         }
 
         .hamburger {
             right: -14px;
             width: 11%;
             height: 7%;
-            top: 44px;
+            top: 97px;
         }
 
         &.open ul {
@@ -600,7 +721,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 
     .banner {
+        height: 80vh;
         margin-top: 145px;
+
+        span {
+            color: rgb(218, 73, 70);
+        }
 
         .main {
             margin-left: 14px;
@@ -609,13 +735,17 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 
         .item {
+            margin-top: 158px;
+
             .cent {
                 text-align: left;
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
 
                 h1 {
-                    font-size: 29px;
+                    font-size: 70px;
+
                 }
 
                 h3 {
@@ -627,7 +757,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
                 }
 
                 button {
-                    width: 41%;
+                    width: 130px;
+                    margin: 10px 5px 20px 0px;
                 }
             }
         }
@@ -637,18 +768,24 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     .about {
         img {
             width: 100%;
-            margin-top: 60px;
+            // margin-top: 60px;
+            margin-left: 200px;
         }
 
         .text {
+            span {
+                color: rgb(218, 73, 70);
 
+            }
 
             .top {
                 font-size: 35px;
+                text-align: center;
             }
 
             .bottom {
-                font-size: 35px;
+                font-size: 41px;
+                text-align: center;
             }
 
             p {
@@ -657,30 +794,93 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
             .btn2 {
 
-                width: 41%;
+                width: 138px;
                 padding: 10px;
-              
+                margin-left: 274px;
+
+            }
+        }
+    }
+
+    .projects {
+        h3 {
+            margin: 55px 0 10px 0;
+        }
+
+        .view {
+            width: 130px;
+            margin: 10px 0 10px 287px;
+        }
+
+        .projeccts {
+
+            .grup1 {
+                margin-top: 20px;
+
+                h3 {
+                    font-size: 20px;
+                }
+
+                a {
+                    color: black;
+                    text-decoration: none;
+                }
+
+                img {
+                    width: 8%;
+                    position: absolute;
+                    top: -24px;
+                    left: 336px;
+                }
+            }
+        }
+    }
+
+    .grup2 {
+        h3 {
+            font-size: 20px;
+        }
+    }
+
+
+
+
+
+    img {
+
+        margin-top: 60px;
+
+    }
+
+
+    .connect {
+        span {
+            color: rgb(218, 73, 70);
+        }
+
+        form {
+            input {
+                width: 75%;
+                padding: 10px;
+            }
+
+            .messag {
+                padding: 40px;
             }
         }
 
 
-
-        // .img1 {
-        //     .tig {
-        //         display: block;
-        //     }
-        // }
-    }
-
-    .connect {
-        form input {
-            width: 75%;
-            padding: 10px;
+        button {
+            width: 130px;
         }
     }
 
     footer {
         height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 26px;
 
         .images {
             top: 38px;
@@ -696,7 +896,16 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     }
 
 
+
+
 }
+
+
+
+
+
+
+
 
 
 
@@ -707,6 +916,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     header {
+        height: 20vh;
+
         .hamburger {
             display: none;
         }
@@ -730,8 +941,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         img {
             width: 4%;
             height: 7%;
-            right: 75px;
-            top: 38px;
+            right: 64px;
+            top: 6px;
+            top: 9px;
+            object-fit: contain;
 
 
         }
@@ -742,7 +955,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     }
 
     .banner {
+        height: 80vh;
         margin-top: 148px;
+
+        span {
+            color: rgb(218, 73, 70);
+        }
 
         .main {
             margin-left: 75px;
@@ -754,33 +972,54 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         }
 
         .item {
-            button {
-                padding: 10px;
-                width: 26%;
+            .cent {
+                button {
+                    padding: 20px;
+                    width: 182px;
+                }
+
+                h1 {
+                    font-size: 101px;
+                }
+
+                h3 {
+                    font-size: 39px;
+                }
+
+                p {
+                    font-size: 29px;
+                }
             }
         }
 
         h3 {
-            margin-top: -1px;
+            margin-top: -151px;
         }
 
         p {
             line-height: 1.5;
-            margin: 25px 0;
+            margin: 5px 0;
         }
     }
 
     .about {
         img {
             width: 74%;
-            margin-right: 103px;
+            margin-left: 5px;
 
         }
 
         .text {
-            text-align: right;
+            
+
             .bottom {
                 font-size: 29px;
+
+            }
+
+            span {
+                color: rgb(218, 73, 70);
+
             }
 
             .top {
@@ -788,14 +1027,15 @@ No media query since this is the default in Bootstrap because it is "mobile firs
             }
 
             .btn2 {
-                width: 26%;
+                width: 140px;
                 padding: 10px;
-               
+                margin: 20px 0 0 295px;
+
             }
 
             p {
                 line-height: 1.5;
-                margin: 20px 0;
+                margin: 5px 0;
                 font-size: 15px;
             }
         }
@@ -805,18 +1045,35 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     }
 
     .projects {
+        .view {
+            background-color: rgb(218, 73, 70);
+            margin: 62px 0 0 600px;
+        }
+
         h2 {
             font-size: 29px;
         }
-        .flyware{
-            margin-left: 389px;
+
+        h3 {
+            margin: 170px 20px 10px 0;
         }
-        h3{
-            margin: 34px;
+
+        img {
+            width: 100%;
+
+        }
+
+        button {
+            margin: 50px 0 10px 509px;
         }
 
     }
 
+
+
+    // .tigzoz-pic{
+    //     margin-left: 10px;
+    // }
     .services {
         .items {
             margin-top: 65px;
@@ -831,6 +1088,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     .connect {
         margin-top: 100px;
 
+        span {
+            color: rgb(218, 73, 70);
+        }
+
         h2 {
             font-size: 29px;
         }
@@ -842,7 +1103,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         }
 
         form input {
-            width: 65%;
+            width: 50%;
             padding: 10px;
         }
 
@@ -850,25 +1111,24 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
     footer {
         height: 11vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 200px;
 
         .images {
-            top: 26px;
-            left: 101px;
+            object-fit: contain;
         }
 
         h3 {
             font-size: 20px;
             font-family: $regular;
             top: 38px;
-            left: 951px;
+            left: 1036px;
         }
 
         ul {
-            display: inline-block;
             display: flex;
-            position: absolute;
-            top: 37px;
-            left: 343px;
         }
 
         li a {
@@ -881,6 +1141,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     }
 
 }
+
+
+
+
 
 
 

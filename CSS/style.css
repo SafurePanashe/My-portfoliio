@@ -133,14 +133,24 @@ table {
   border-spacing: 0;
 }
 
+input:focus {
+  outline: none;
+}
+
 .On {
   background-color: black;
+  color: white;
+}
+.On body {
   color: white;
 }
 .On .hamburger .bar1,
 .On .hamburger .bar2,
 .On .hamburger .bar3 {
   background-color: white;
+}
+.On header {
+  height: 12vh;
 }
 .On header img {
   transition: 3sec ease-in-out;
@@ -156,6 +166,13 @@ table {
 .On header.open ul li a {
   color: white;
 }
+.On .projects .projeccts .projeccts .grup1 a {
+  color: white;
+  text-decoration: none;
+}
+.On .services .card {
+  color: black;
+}
 .On .services .items .kit {
   color: black;
 }
@@ -167,21 +184,25 @@ table {
 header {
   display: flex;
 }
+header span {
+  color: rgb(218, 73, 70);
+}
 header h2 {
   font-size: 25px;
   font-family: "semi-bold";
   margin-top: 30px;
-  color: rgb(102, 216, 144);
 }
 header ul {
   display: none;
 }
 header img {
-  width: 13%;
-  height: 7%;
+  width: 11%;
+  height: 6%;
   position: absolute;
-  top: 24px;
+  top: 27px;
   right: 75px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 header .hamburger {
   display: inline-block;
@@ -227,86 +248,154 @@ header.open .bar3 {
 }
 
 .banner {
+  height: 88vh;
   margin-top: 140px;
+}
+.banner .banner-img {
+  width: 100%;
+  height: 100vh;
+}
+.banner span {
+  color: rgb(218, 73, 70);
 }
 .banner .item {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  justify-content: center;
+  margin-top: 49px;
+}
+.banner .item .cent {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   border-radius: 5px;
 }
-.banner .item .cent {
-  text-align: left;
-}
-.banner .item h3 {
+.banner .item .cent h3 {
   font-size: 19px;
   font-family: "semi-bold";
-  margin-top: -76px;
 }
-.banner .item h1 {
+.banner .item .cent h1 {
   font-size: 36px;
   font-family: "bold";
-  margin-top: 20px;
+  margin-top: 5px;
 }
-.banner .item p {
+.banner .item .cent p {
   font-size: 20px;
   font-family: "regular";
 }
-.banner .item button {
-  background-color: rgb(102, 216, 144);
+.banner .item .cent button {
+  background-color: rgb(218, 73, 70);
   color: white;
   border: none;
-  margin: 10px 5px 20px 5px;
+  margin: 10px 5px 20px 100px;
   padding: 10px;
   width: 41%;
   border-radius: 5px;
 }
 
 .about {
-  text-align: center;
   margin-top: 50px;
 }
+.about img {
+  width: 100%;
+}
 .about .text {
-  text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.about .text span {
+  color: rgb(218, 73, 70);
 }
 .about .text .abt {
   margin-left: 20px;
 }
 .about .text .top {
-  margin-top: 50px;
+  margin: 50px 0 0 116px;
   font-size: 25px;
   font-family: "regular";
 }
 .about .text .bottom {
-  font-size: 25px;
+  font-size: 22px;
   font-family: "semi-bold";
-  margin-top: 20px;
+  margin-top: 5px;
 }
 .about .text p {
   font-size: 15px;
   font-family: "regular";
 }
 .about .text .btn2 {
-  background-color: rgb(102, 216, 144);
+  background-color: rgb(218, 73, 70);
   color: white;
   border: none;
   border-radius: 5px;
   width: 41%;
   padding: 10px;
+  margin-left: 113px;
 }
 
 .projects {
   margin-top: 150px;
 }
+.projects img {
+  width: 100%;
+}
+.projects h2 {
+  text-align: center;
+}
+.projects .view {
+  background-color: rgb(218, 73, 70);
+}
 .projects .projeccts {
-  display: flex;
+  position: relative;
 }
 .projects .projeccts h3 {
+  font-size: 15px;
+}
+.projects .projeccts .grup1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.projects .projeccts .grup1 img {
+  width: 16%;
+  position: absolute;
+  top: 29px;
+  left: 72px;
+}
+.projects .projeccts .grup1 h3 {
+  margin: 10px;
+}
+.projects .projeccts .grup2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projects .projeccts .grup2 h3 {
+  margin: 10px;
+}
+.projects h3 {
+  margin-top: 20px;
+  font-size: 25px;
+  font-family: "semi-bold";
+}
+.projects h4 {
   font-size: 20px;
+  font-family: "regular";
+}
+.projects p {
+  font-size: 16px;
+  font-family: "regular";
+}
+.projects button {
+  background-color: rgb(218, 73, 70);
+  width: 38%;
+  margin: 10px 0 10px 118px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 8px;
 }
 
 .services {
@@ -342,6 +431,9 @@ header.open .bar3 {
   margin-top: 50px;
   text-align: center;
 }
+.connect span {
+  color: rgb(218, 73, 70);
+}
 .connect h2 {
   font-size: 25px;
   font-family: "semi-bold";
@@ -357,44 +449,37 @@ header.open .bar3 {
   border-top: none;
   border-left: none;
   border-right: none;
-  margin: 10px;
-  padding: 10px;
+  padding: 10px 0;
 }
 .connect button {
   margin-top: 20px;
   width: 25%;
   border: none;
-  background-color: rgb(102, 216, 144);
+  background-color: rgb(218, 73, 70);
   color: white;
   border-radius: 8px;
   padding: 10px;
 }
 
 footer {
-  background-color: rgb(102, 216, 144);
+  background-color: rgb(218, 73, 70);
   margin-top: 50px;
-  height: 20vh;
-  overflow: hidden;
-  position: relative;
+  height: 17vh;
 }
 footer ul {
   display: none;
 }
 footer .images {
   display: flex;
-  position: absolute;
-  top: 20px;
-  left: 100px;
 }
 footer .images img {
   width: 30px;
   height: 30px;
-  margin: 5px;
+  margin: 5px 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 footer h3 {
-  position: absolute;
-  top: 74px;
-  left: 10%;
   color: white;
   font-size: 20px;
   font-family: "regular";
@@ -442,6 +527,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
   header {
+    height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -452,33 +538,41 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     margin-top: 43px;
   }
   header img {
-    width: 9%;
-    height: 6%;
-    top: 30px;
+    top: 6px;
     right: 106px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   header .hamburger {
     right: -14px;
     width: 11%;
     height: 7%;
-    top: 44px;
+    top: 97px;
   }
   header.open ul {
     left: 150px;
   }
   .banner {
+    height: 80vh;
     margin-top: 145px;
+  }
+  .banner span {
+    color: rgb(218, 73, 70);
   }
   .banner .main {
     margin-left: 14px;
+  }
+  .banner .item {
+    margin-top: 158px;
   }
   .banner .item .cent {
     text-align: left;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
   .banner .item .cent h1 {
-    font-size: 29px;
+    font-size: 70px;
   }
   .banner .item .cent h3 {
     font-size: 18px;
@@ -487,31 +581,80 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     font-size: 15px;
   }
   .banner .item .cent button {
-    width: 41%;
+    width: 130px;
+    margin: 10px 5px 20px 0px;
   }
   .about img {
     width: 100%;
-    margin-top: 60px;
+    margin-left: 200px;
+  }
+  .about .text span {
+    color: rgb(218, 73, 70);
   }
   .about .text .top {
     font-size: 35px;
+    text-align: center;
   }
   .about .text .bottom {
-    font-size: 35px;
+    font-size: 41px;
+    text-align: center;
   }
   .about .text p {
     font-size: 22px;
   }
   .about .text .btn2 {
-    width: 41%;
+    width: 138px;
     padding: 10px;
+    margin-left: 274px;
+  }
+  .projects h3 {
+    margin: 55px 0 10px 0;
+  }
+  .projects .view {
+    width: 130px;
+    margin: 10px 0 10px 287px;
+  }
+  .projects .projeccts .grup1 {
+    margin-top: 20px;
+  }
+  .projects .projeccts .grup1 h3 {
+    font-size: 20px;
+  }
+  .projects .projeccts .grup1 a {
+    color: black;
+    text-decoration: none;
+  }
+  .projects .projeccts .grup1 img {
+    width: 8%;
+    position: absolute;
+    top: -24px;
+    left: 336px;
+  }
+  .grup2 h3 {
+    font-size: 20px;
+  }
+  img {
+    margin-top: 60px;
+  }
+  .connect span {
+    color: rgb(218, 73, 70);
   }
   .connect form input {
     width: 75%;
     padding: 10px;
   }
+  .connect form .messag {
+    padding: 40px;
+  }
+  .connect button {
+    width: 130px;
+  }
   footer {
     height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 26px;
   }
   footer .images {
     top: 38px;
@@ -526,6 +669,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  header {
+    height: 20vh;
+  }
   header .hamburger {
     display: none;
   }
@@ -546,14 +692,21 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   header img {
     width: 4%;
     height: 7%;
-    right: 75px;
-    top: 38px;
+    right: 64px;
+    top: 6px;
+    top: 9px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   header h3 {
     margin-top: 10px;
   }
   .banner {
+    height: 80vh;
     margin-top: 148px;
+  }
+  .banner span {
+    color: rgb(218, 73, 70);
   }
   .banner .main {
     margin-left: 75px;
@@ -561,47 +714,64 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .banner img {
     width: 74%;
   }
-  .banner .item button {
-    padding: 10px;
-    width: 26%;
+  .banner .item .cent button {
+    padding: 20px;
+    width: 182px;
+  }
+  .banner .item .cent h1 {
+    font-size: 101px;
+  }
+  .banner .item .cent h3 {
+    font-size: 39px;
+  }
+  .banner .item .cent p {
+    font-size: 29px;
   }
   .banner h3 {
-    margin-top: -1px;
+    margin-top: -151px;
   }
   .banner p {
     line-height: 1.5;
-    margin: 25px 0;
+    margin: 5px 0;
   }
   .about img {
     width: 74%;
-    margin-right: 103px;
-  }
-  .about .text {
-    text-align: right;
+    margin-left: 5px;
   }
   .about .text .bottom {
     font-size: 29px;
+  }
+  .about .text span {
+    color: rgb(218, 73, 70);
   }
   .about .text .top {
     font-size: 29px;
   }
   .about .text .btn2 {
-    width: 26%;
+    width: 140px;
     padding: 10px;
+    margin: 20px 0 0 295px;
   }
   .about .text p {
     line-height: 1.5;
-    margin: 20px 0;
+    margin: 5px 0;
     font-size: 15px;
+  }
+  .projects .view {
+    background-color: rgb(218, 73, 70);
+    margin: 62px 0 0 600px;
   }
   .projects h2 {
     font-size: 29px;
   }
-  .projects .flyware {
-    margin-left: 389px;
-  }
   .projects h3 {
-    margin: 34px;
+    margin: 170px 20px 10px 0;
+  }
+  .projects img {
+    width: 100%;
+  }
+  .projects button {
+    margin: 50px 0 10px 509px;
   }
   .services .items {
     margin-top: 65px;
@@ -613,6 +783,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .connect {
     margin-top: 100px;
   }
+  .connect span {
+    color: rgb(218, 73, 70);
+  }
   .connect h2 {
     font-size: 29px;
   }
@@ -622,28 +795,28 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     padding: 15px;
   }
   .connect form input {
-    width: 65%;
+    width: 50%;
     padding: 10px;
   }
   footer {
     height: 11vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 200px;
   }
   footer .images {
-    top: 26px;
-    left: 101px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   footer h3 {
     font-size: 20px;
     font-family: "regular";
     top: 38px;
-    left: 951px;
+    left: 1036px;
   }
   footer ul {
-    display: inline-block;
     display: flex;
-    position: absolute;
-    top: 37px;
-    left: 343px;
   }
   footer li a {
     color: white;
