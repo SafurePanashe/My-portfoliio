@@ -429,7 +429,10 @@ header.open .bar3 {
 
 .connect {
   margin-top: 50px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .connect span {
   color: rgb(218, 73, 70);
@@ -644,7 +647,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     color: rgb(218, 73, 70);
   }
   .connect form input {
-    width: 75%;
     padding: 10px;
   }
   .connect form .messag {
@@ -799,7 +801,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     padding: 15px;
   }
   .connect form input {
-    width: 50%;
     padding: 10px;
   }
   footer {
